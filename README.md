@@ -1,4 +1,4 @@
-# apprentissage-godot
+# Apprentissage-godot
 
 Petit projet de **plateformer 2D** réalisé avec **Godot 4.7** pour apprendre le moteur.
 
@@ -11,6 +11,37 @@ Petit projet de **plateformer 2D** réalisé avec **Godot 4.7** pour apprendre l
 - **Une passerelle mobile** qui se déplace toute seule.
 - **Un PNJ dans une tour** : il te parle, déclenche une petite **cinématique scriptée par code**, puis te dit une dernière phrase. Fin de la démo.
 - **Menu** : Menu principale avec un bouton jouer, quitter et option (qui ne fait rien).
+
+## Aperçu
+ 
+### Menu principal
+ 
+<img src="image_git/tuto%203%20%28DEBUG%29%2013_10_2026%2021_22_21.png" alt="Menu principal" width="700">
+
+### Le personnage face à un slime
+ 
+<img src="image_git/tuto%203%20%28DEBUG%29%2013_10_2026%2021_22_32.png" alt="Le personnage face à un slime" width="700">
+
+### Game over : le slime a gagné
+ 
+<img src="image_git/tuto%203%20%28DEBUG%29%2013_10_2026%2021_22_36.png" alt="Le personnage est mort" width="700">
+
+### Sur la passerelle
+ 
+<img src="image_git/tuto%203%20%28DEBUG%29%2013_10_2026%2021_22_57.png" alt="Le personnage sur une plateforme" width="700">
+
+### Le PNJ de la tour prend la parole
+ 
+<img src="image_git/tuto%203%20%28DEBUG%29%2013_10_2026%2021_23_15.png" alt="Dialogue avec le PNJ" width="700">
+
+### La cinématique : le PNJ saute
+ 
+<img src="image_git/tuto%203%20%28DEBUG%29%2013_10_2026%2021_23_27.png" alt="Le PNJ saute pendant la cinématique" width="700">
+
+### La phrase finale
+ 
+<img src="image_git/tuto%203%20%28DEBUG%29%2013_10_2026%2021_23_39.png" alt="Phrase finale du PNJ" width="700">
+
 
 ## Structure du projet
 
