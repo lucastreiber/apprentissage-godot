@@ -1,0 +1,200 @@
+[gd_scene format=3 uid="uid://b1ln4jcqk5yok"]
+
+[ext_resource type="FontFile" uid="uid://dfn51tsrrlfmu" path="res://assets/font/PressStart2P.ttf" id="1_c2u1v"]
+[ext_resource type="Texture2D" uid="uid://co4twmceyf23b" path="res://assets/menu/exite.png" id="2_yjkok"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7nw6o"]
+bg_color = Color(0.6073587, 0.49205333, 0.33487266, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(0, 0, 0, 1)
+border_blend = true
+corner_radius_top_left = 32
+corner_radius_top_right = 32
+corner_radius_bottom_right = 32
+corner_radius_bottom_left = 32
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_bguob"]
+bg_color = Color(0.39607844, 0.2627451, 0.12941177, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_yjkok"]
+bg_color = Color(0.25263867, 0.16117042, 0.06948553, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_2iy26"]
+bg_color = Color(0.5396548, 0.36606696, 0.19331652, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_kv8mn"]
+bg_color = Color(0.39607844, 0.2627451, 0.12941177, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1sggn"]
+bg_color = Color(0.39607844, 0.2627451, 0.12941177, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(0, 0, 0, 1)
+border_blend = true
+corner_radius_top_left = 32
+corner_radius_top_right = 32
+corner_radius_bottom_right = 32
+corner_radius_bottom_left = 32
+
+[node name="Options" type="Control" unique_id=674386730]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = -393.0
+offset_bottom = -106.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Panel" type="Panel" parent="." unique_id=660140206]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_7nw6o")
+
+[node name="Label" type="Label" parent="." unique_id=199186973]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_top = 10.0
+offset_bottom = 42.0
+grow_horizontal = 2
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 1
+theme_override_constants/shadow_offset_y = 2
+theme_override_fonts/font = ExtResource("1_c2u1v")
+theme_override_font_sizes/font_size = 40
+text = "Options"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="HBoxContainer" type="HBoxContainer" parent="." unique_id=1044539449]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_left = 15.0
+offset_top = 71.0
+offset_right = -15.0
+offset_bottom = 106.0
+grow_horizontal = 2
+alignment = 1
+
+[node name="btnControles" type="Button" parent="HBoxContainer" unique_id=1527165436]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_fonts/font = ExtResource("1_c2u1v")
+theme_override_font_sizes/font_size = 20
+theme_override_styles/normal = SubResource("StyleBoxFlat_bguob")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_yjkok")
+theme_override_styles/hover = SubResource("StyleBoxFlat_2iy26")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_kv8mn")
+theme_override_styles/focus = SubResource("StyleBoxFlat_2iy26")
+text = "Controles"
+
+[node name="btnGraphismes" type="Button" parent="HBoxContainer" unique_id=2133582112]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_fonts/font = ExtResource("1_c2u1v")
+theme_override_font_sizes/font_size = 20
+theme_override_styles/normal = SubResource("StyleBoxFlat_bguob")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_yjkok")
+theme_override_styles/hover = SubResource("StyleBoxFlat_2iy26")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_kv8mn")
+theme_override_styles/focus = SubResource("StyleBoxFlat_2iy26")
+text = "Graphismes
+"
+
+[node name="btnSon" type="Button" parent="HBoxContainer" unique_id=488173749]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_fonts/font = ExtResource("1_c2u1v")
+theme_override_font_sizes/font_size = 20
+theme_override_styles/normal = SubResource("StyleBoxFlat_bguob")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_yjkok")
+theme_override_styles/hover = SubResource("StyleBoxFlat_2iy26")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_kv8mn")
+theme_override_styles/focus = SubResource("StyleBoxFlat_2iy26")
+text = "Son"
+
+[node name="pnlControles" type="Panel" parent="." unique_id=2127169354]
+layout_mode = 0
+offset_left = 11.0
+offset_top = 115.0
+offset_right = 748.0
+offset_bottom = 531.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_1sggn")
+
+[node name="pnlGraphismes" type="Panel" parent="." unique_id=1893329889]
+layout_mode = 0
+offset_left = 11.0
+offset_top = 115.0
+offset_right = 748.0
+offset_bottom = 531.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_1sggn")
+
+[node name="pnlSon" type="Panel" parent="." unique_id=1998583177]
+layout_mode = 0
+offset_left = 11.0
+offset_top = 115.0
+offset_right = 748.0
+offset_bottom = 531.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_1sggn")
+
+[node name="Button" type="Button" parent="." unique_id=1912219449]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -66.0
+offset_top = 10.0
+offset_right = -12.0
+offset_bottom = 61.0
+grow_horizontal = 0
+icon = ExtResource("2_yjkok")
+flat = true
+icon_alignment = 1
+expand_icon = true

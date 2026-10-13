@@ -1,0 +1,264 @@
+[gd_scene format=3 uid="uid://xbehppbddlgq"]
+
+[ext_resource type="Texture2D" uid="uid://ct82hbcm7d6v6" path="res://assets/background/Sky.png" id="1_8ln24"]
+[ext_resource type="FontFile" uid="uid://dfn51tsrrlfmu" path="res://assets/font/PressStart2P.ttf" id="1_l6cm7"]
+[ext_resource type="Script" uid="uid://besebfd5o8y5b" path="res://scripts/main_menu.gd" id="1_oa1go"]
+[ext_resource type="Texture2D" uid="uid://qdkqo8s6ttb8" path="res://assets/background/Rock Mountains.png" id="2_rtw2f"]
+[ext_resource type="Texture2D" uid="uid://d27m2vrqj7iau" path="res://assets/background/Grass Mountains.png" id="3_oa1go"]
+[ext_resource type="Texture2D" uid="uid://c32l2lm63b3r" path="res://assets/background/tour de terre.png" id="4_tbmy8"]
+[ext_resource type="Texture2D" uid="uid://d22mnqpbgmulo" path="res://assets/sprites/knight/IDLE.png" id="6_rtw2f"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_7nw6o"]
+texture = ExtResource("1_8ln24")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_jk1qb"]
+texture = ExtResource("2_rtw2f")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_5dd4i"]
+texture = ExtResource("3_oa1go")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_bguob"]
+texture = ExtResource("4_tbmy8")
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7nw6o"]
+bg_color = Color(6.545782e-06, 0.56476444, 0.8768409, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.47397572, 0.47397572, 0.47397572, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+expand_margin_top = 5.0
+expand_margin_bottom = 5.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_vue75"]
+bg_color = Color(9.1448425e-07, 0.37848318, 0.59674454, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.47397572, 0.47397572, 0.47397572, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+expand_margin_top = 5.0
+expand_margin_bottom = 5.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_l6cm7"]
+bg_color = Color(0, 0.48627245, 0.76029146, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.47397572, 0.47397572, 0.47397572, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+expand_margin_top = 5.0
+expand_margin_bottom = 5.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ekxnf"]
+bg_color = Color(6.545782e-06, 0.56476444, 0.8768409, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.47397572, 0.47397572, 0.47397572, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+expand_margin_top = 5.0
+expand_margin_bottom = 5.0
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_bguob"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jc3p3"]
+atlas = ExtResource("6_rtw2f")
+region = Rect2(0, 0, 96, 84)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hax0n"]
+atlas = ExtResource("6_rtw2f")
+region = Rect2(96, 0, 96, 84)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_t4otl"]
+atlas = ExtResource("6_rtw2f")
+region = Rect2(192, 0, 96, 84)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_j2b1d"]
+atlas = ExtResource("6_rtw2f")
+region = Rect2(288, 0, 96, 84)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cs1tg"]
+atlas = ExtResource("6_rtw2f")
+region = Rect2(384, 0, 96, 84)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2dvfe"]
+atlas = ExtResource("6_rtw2f")
+region = Rect2(480, 0, 96, 84)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_giy8y"]
+atlas = ExtResource("6_rtw2f")
+region = Rect2(576, 0, 96, 84)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_7nw6o"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jc3p3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hax0n")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_t4otl")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_j2b1d")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cs1tg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2dvfe")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_giy8y")
+}],
+"loop": 1,
+"name": &"Idle",
+"speed": 10.0
+}]
+
+[node name="MainMenu" type="Control" unique_id=488098137]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_oa1go")
+
+[node name="Fond" type="Panel" parent="." unique_id=460445641]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_7nw6o")
+
+[node name="Fond2" type="Panel" parent="." unique_id=1247983758]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_jk1qb")
+
+[node name="Fond3" type="Panel" parent="." unique_id=329502906]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_5dd4i")
+
+[node name="Panel" type="Panel" parent="." unique_id=2087938387]
+layout_mode = 0
+offset_left = 740.00006
+offset_top = 431.0
+offset_right = 800.7145
+offset_bottom = 555.1874
+scale = Vector2(5.8635154, 4.0422783)
+theme_override_styles/panel = SubResource("StyleBoxTexture_bguob")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=1767523730]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 108.0
+offset_top = 9.0
+offset_right = 536.0
+offset_bottom = 139.0
+grow_vertical = 2
+theme_override_constants/separation = 20
+alignment = 1
+
+[node name="btnPlay" type="Button" parent="VBoxContainer" unique_id=151130349]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_focus_color = Color(1, 1, 1, 1)
+theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("1_l6cm7")
+theme_override_font_sizes/font_size = 28
+theme_override_styles/normal = SubResource("StyleBoxFlat_7nw6o")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_vue75")
+theme_override_styles/hover = SubResource("StyleBoxFlat_l6cm7")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_ekxnf")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_bguob")
+text = "Jouer"
+
+[node name="btnOption" type="Button" parent="VBoxContainer" unique_id=2008671714]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_focus_color = Color(1, 1, 1, 1)
+theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("1_l6cm7")
+theme_override_font_sizes/font_size = 28
+theme_override_styles/normal = SubResource("StyleBoxFlat_7nw6o")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_vue75")
+theme_override_styles/hover = SubResource("StyleBoxFlat_l6cm7")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_ekxnf")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_bguob")
+text = "Options"
+
+[node name="btnQuitte" type="Button" parent="VBoxContainer" unique_id=138908963]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_focus_color = Color(1, 1, 1, 1)
+theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("1_l6cm7")
+theme_override_font_sizes/font_size = 28
+theme_override_styles/normal = SubResource("StyleBoxFlat_7nw6o")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_vue75")
+theme_override_styles/hover = SubResource("StyleBoxFlat_l6cm7")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_ekxnf")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_bguob")
+text = "Quitter"
+
+[node name="Label" type="Label" parent="." unique_id=562398159]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 105.0
+grow_horizontal = 2
+theme_override_fonts/font = ExtResource("1_l6cm7")
+theme_override_font_sizes/font_size = 40
+text = "Le chevalier neuille prime"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1967793528]
+position = Vector2(903, 376)
+scale = Vector2(3.822917, 3.5357144)
+sprite_frames = SubResource("SpriteFrames_7nw6o")
+animation = &"Idle"
+autoplay = "Idle"
+frame_progress = 0.30093154
+flip_h = true
+
+[connection signal="pressed" from="VBoxContainer/btnPlay" to="." method="_on_btn_play_pressed"]
+[connection signal="pressed" from="VBoxContainer/btnOption" to="." method="_on_btn_option_pressed"]
+[connection signal="pressed" from="VBoxContainer/btnQuitte" to="." method="_on_btn_quitte_pressed"]

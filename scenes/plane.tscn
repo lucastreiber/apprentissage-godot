@@ -1,0 +1,55 @@
+[gd_scene format=3 uid="uid://by0hilm2v6r8o"]
+
+[ext_resource type="Texture2D" uid="uid://m8mpkexv8w5m" path="res://assets/sprites/avion/vol/avion-1.png" id="1_lf188"]
+[ext_resource type="Texture2D" uid="uid://bnuhl01y283rr" path="res://assets/sprites/avion/vol/avion-2.png" id="2_7mohe"]
+[ext_resource type="Texture2D" uid="uid://nb35rf86cx2w" path="res://assets/sprites/avion/vol/avion-3.png" id="3_nqcjx"]
+[ext_resource type="Texture2D" uid="uid://bvx6fkhse62pb" path="res://assets/sprites/avion/vol/avion-4.png" id="4_31wwe"]
+[ext_resource type="Texture2D" uid="uid://cdvm146ew0hhu" path="res://assets/sprites/avion/vol/avion-5.png" id="5_axmx6"]
+[ext_resource type="Texture2D" uid="uid://6aw6lhm4ax1k" path="res://assets/sprites/avion/vol/avion-6.png" id="6_bsfla"]
+[ext_resource type="Texture2D" uid="uid://cbyk8q4sw30pt" path="res://assets/sprites/avion/avion_avec_roue.png" id="7_cgjw5"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_7nw6o"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_lf188")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_7mohe")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_nqcjx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_31wwe")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_axmx6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_bsfla")
+}],
+"loop": 1,
+"name": &"Fly",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("7_cgjw5")
+}],
+"loop": 1,
+"name": &"Idle",
+"speed": 1.0
+}]
+
+[node name="Plane" type="AnimatableBody2D" unique_id=1053876879]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=2023307758]
+position = Vector2(0, -64)
+sprite_frames = SubResource("SpriteFrames_7nw6o")
+animation = &"Idle"
+autoplay = "Idle"
+frame_progress = 0.5957718
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="." unique_id=1514595960]
+polygon = PackedVector2Array(104, -93, 149, -75, 149, -23, -172, -19, -176, -107, -161, -110, -131, -77)

@@ -1,0 +1,24 @@
+[gd_scene format=3 uid="uid://2t28k2xi7kcd"]
+
+[ext_resource type="Script" uid="uid://bcun53kams0sk" path="res://scripts/ia_movement_logic.gd" id="1_kb7yj"]
+
+[node name="IAMovementLogic" type="Area2D" unique_id=1270085538]
+script = ExtResource("1_kb7yj")
+
+[node name="BeginToMove5s" type="Timer" parent="." unique_id=805909174]
+wait_time = 5.0
+autostart = true
+
+[node name="CheckPlayer" type="Timer" parent="." unique_id=400835554]
+wait_time = 0.5
+autostart = true
+
+[node name="StopToMove3s" type="Timer" parent="." unique_id=607435754]
+wait_time = 2.0
+one_shot = true
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="body_exited" from="." to="." method="_on_body_exited"]
+[connection signal="timeout" from="BeginToMove5s" to="." method="_on_timer_timeout"]
+[connection signal="timeout" from="CheckPlayer" to="." method="_on_check_player_timeout"]
+[connection signal="timeout" from="StopToMove3s" to="." method="_on_stop_to_move_3s_timeout"]

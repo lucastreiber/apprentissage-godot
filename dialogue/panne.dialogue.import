@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://b01rlj58xlxls"
+path="res://.godot/imported/panne.dialogue-794405825807442ec5a4c86b6ec76f79.tres"
+
+[deps]
+
+source_file="res://dialogue/panne.dialogue"
+dest_files=["res://.godot/imported/panne.dialogue-794405825807442ec5a4c86b6ec76f79.tres"]
+
+[params]
+
+defaults=true

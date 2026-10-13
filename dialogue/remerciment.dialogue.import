@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://busy037xh8608"
+path="res://.godot/imported/remerciment.dialogue-dbb402555efc965cb5b1f515a6159cf9.tres"
+
+[deps]
+
+source_file="res://dialogue/remerciment.dialogue"
+dest_files=["res://.godot/imported/remerciment.dialogue-dbb402555efc965cb5b1f515a6159cf9.tres"]
+
+[params]
+
+defaults=true

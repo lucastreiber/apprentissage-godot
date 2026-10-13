@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://bxl7uu65xwvet"
+path="res://.godot/imported/avion.dialogue-77b75faf56559c44881b4f4f1324d115.tres"
+
+[deps]
+
+source_file="res://dialogue/avion.dialogue"
+dest_files=["res://.godot/imported/avion.dialogue-77b75faf56559c44881b4f4f1324d115.tres"]
+
+[params]
+
+defaults=true
